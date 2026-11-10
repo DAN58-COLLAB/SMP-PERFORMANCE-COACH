@@ -1,32 +1,111 @@
-# SMP Performance Coach
+🏋️ SMP Performance Coach
 
-A command-line learning prototype that combines a Random Forest classifier with rule-based coaching messages. It uses sleep, water and bench-press inputs to predict an illustrative daily step-goal outcome and produce a batch report.
+A Python-based machine learning project that combines a Random Forest classifier with a rule-based coaching system to analyse sample fitness data and generate coaching feedback.
 
-## Project files
-- `1_train_classifier.py` — trains and evaluates a small classifier.
-- `2_coaching_layer.py` — demonstrates rule-based coaching templates.
-- `3_classifier_+_coaching_in_one_function.py` — combines prediction and coaching.
-- `4_full_smp_Performance_coach_application.py` — runs a batch of sample days and prints individual and summary reports.
+The project demonstrates how machine learning predictions can be combined with simple Python logic to produce readable reports.
 
-## Requirements
-Python 3.9+, NumPy and scikit-learn.
+🚀 What the Project Does
 
-## Run
+The application:
 
-```bash
+Accepts sample fitness inputs, including sleep, water intake and bench-press data.
+
+Uses a Random Forest classifier to predict an illustrative daily step-goal outcome.
+
+Generates rule-based coaching messages.
+
+Processes multiple sample records.
+
+Produces individual reports and a final summary.
+
+🛠️ Technologies Used
+
+Python
+
+NumPy
+
+Scikit-learn
+
+Random Forest Classification
+
+Rule-based logic
+
+📁 Project Structure
+
+File
+
+Purpose
+
+1_train_classifier.py
+
+Trains and evaluates the classifier
+
+2_coaching_layer.py
+
+Creates rule-based coaching messages
+
+3_classifier_+_coaching_in_one_function.py
+
+Combines prediction and coaching
+
+4_full_smp_Performance_coach_application.py
+
+Runs the complete sample application
+
+⚙️ Installation
+
+1. Clone the repository
+
+git clone https://github.com/DAN58-COLLAB/SMP-PERFORMANCE-COACH.git
+
+2. Enter the project folder
+
+cd SMP-PERFORMANCE-COACH
+
+3. Create a virtual environment
+
 python -m venv .venv
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-# macOS/Linux: source .venv/bin/activate
+
+4. Activate the environment
+
+Windows PowerShell:
+
+.venv\Scripts\Activate.ps1
+
+5. Install dependencies
+
 pip install -r requirements.txt
+
+▶️ Run the Application
+
 python "4_full_smp_Performance_coach_application.py"
-```
 
-## Learning objectives
-- Prepare feature arrays and labels
-- Split sample data into training and test sets
-- Train a Random Forest classifier
-- Combine model output with readable rule-based feedback
-- Process multiple records and summarize results
+🎯 Learning Objectives
 
-## Important limitations
-The 28-row dataset and labels are synthetic and illustrative. The model is not validated for health, fitness or medical decisions. Its probability output is not evidence of real-world accuracy. Coaching messages are fixed templates, not individualized professional advice.
+This project demonstrates practical understanding of:
+
+Python data handling
+
+NumPy arrays
+
+Machine learning fundamentals
+
+Training and testing a classifier
+
+Rule-based decision making
+
+Functions and application structure
+
+Processing multiple records and generating reports
+
+⚠️ Project Limitations
+
+This is an educational prototype. Its 28-row dataset and labels are synthetic and illustrative.
+
+The model has not been validated for real-world fitness, health or medical decisions. Its predictions should not be treated as professional advice or evidence of actual performance.
+
+👨‍💻 Author
+
+Dan58
+
+Learning Python, machine learning and software development through practical projects.
