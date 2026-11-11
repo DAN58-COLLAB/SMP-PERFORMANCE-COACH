@@ -1,3 +1,4 @@
+# Import libraries needed for data handling and machine learning.
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -16,17 +17,23 @@ X = np.array([
 # Illustrative labels: 1 = hit step goal; 0 = missed step goal.
 y = np.array([0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1])
 
-X_train, X_test, y_train, y_test = train_test_split(
+
+# Split the dataset into training data and testing data.X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
-model = RandomForestClassifier(n_estimators=10, random_state=42)
+# Create a Random Forest classifier with 10 decision trees.
+model = RandomForestClassifier(n_estimators=10, random_state=42
+                               
+# Train the model using the training data.                              
 model.fit(X_train, y_train)
 
+# Use the trained model to predict results for the test data.
 predictions = model.predict(X_test)
 print(f"Training samples: {len(X_train)}")
 print(f"Test samples: {len(X_test)}")
 print(f"Accuracy on sample test split: {accuracy_score(y_test, predictions):.0%}")
 
+# Display how much each input feature contributes to the model.
 print("\nFeature importance:")
 for name, importance in sorted(
     zip(["sleep_hr", "water_glasses", "bench_kg"], model.feature_importances_),
