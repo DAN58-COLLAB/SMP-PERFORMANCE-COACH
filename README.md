@@ -56,29 +56,41 @@ Runs the complete sample application
 
 1. Clone the repository
 
-git clone https://github.com/DAN58-COLLAB/SMP-PERFORMANCE-COACH.git
+```bash
+git clone https://github.com/DanOdhiambo5/SMP-PERFORMANCE-COACH.git
+```
 
 2. Enter the project folder
 
+```bash
 cd SMP-PERFORMANCE-COACH
+```
 
 3. Create a virtual environment
 
+```bash
 python -m venv .venv
+```
 
 4. Activate the environment
 
 Windows PowerShell:
 
+```powershell
 .venv\Scripts\Activate.ps1
+```
 
 5. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ▶️ Run the Application
 
+```bash
 python "4_full_smp_Performance_coach_application.py"
+```
 
 🎯 Learning Objectives
 
